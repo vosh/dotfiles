@@ -1,0 +1,71 @@
+! xscreensaver ---------------------------------------------------------------
+
+!font settings
+xscreensaver.Dialog.headingFont:        -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #101010
+xscreensaver.Dialog.background:         #D8D8D8
+xscreensaver.Dialog.topShadowColor:     #D8D8D8
+xscreensaver.Dialog.bottomShadowColor:  #D8D8D8
+xscreensaver.Dialog.Button.foreground:  #101010
+xscreensaver.Dialog.Button.background:  #E5E5E5
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #101010
+xscreensaver.Dialog.text.background:    #E5E5E5
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        20
+xscreensaver.Dialog.shadowThickness:    2
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #101010
+xscreensaver.passwd.thermometer.background:  #2E2E2E
+xscreensaver.passwd.thermometer.width:       8
+
+URxvt*transparent: false
+URxvt*saveLines: 12000
+URxvt*font: xft:Terminus:pixelsize=9
+URxvt*font: xft:Terminus:pixelsize=9
+URxvt.cursorBlink: True
+URxvt*scrollBar: false
+URxvt*foreground: #DCCBBB
+URxvt*background: #252627
+
+URxvt.perl-ext-common: ...,clipboard
+URxvt.keysym.C-c:   perl:clipboard:copy
+URxvt.keysym.C-v:   perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+
+! vosh scheme
+*background: #252627
+*foreground: #DCCBBB
+! Black (not tango) + DarkGrey
+*color0:  #000000
+*color8:  #555753
+! DarkRed + Red
+*color1:  #c64552
+*color9:  #f17060
+! DarkGreen + Green
+*color2:  #8ec553
+*color10: #b9f469
+! DarkYellow + Yellow
+*color3:  #de9e4e
+*color11: #f7b056
+! DarkBlue + Blue
+*color4:  #479ebb
+*color12: #71dede
+! DarkMangenta + Mangenta
+*color5:  #75314b
+*color13: #d66590
+!DarkCyan + Cyan (both not tango)
+*color6:  #618485
+*color14: #7eb2b2
+! LightGrey + White
+*color7:  #C5C5C5
+*color15: #CFCFCF
