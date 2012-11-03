@@ -24,7 +24,7 @@ xscreensaver.Dialog.shadowThickness:    2
 !timeout bar (background is actually determined by Dialog.text.background)
 xscreensaver.passwd.thermometer.foreground:  #101010
 xscreensaver.passwd.thermometer.background:  #2E2E2E
-xscreensaver.passwd.thermometer.width:       8
+xscreensaver.passwd.thermometer.width:       8 
 
 URxvt*transparent: false
 URxvt*saveLines: 12000
