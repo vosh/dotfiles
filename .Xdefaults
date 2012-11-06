@@ -24,11 +24,7 @@ xscreensaver.Dialog.shadowThickness:    2
 !timeout bar (background is actually determined by Dialog.text.background)
 xscreensaver.passwd.thermometer.foreground:  #101010
 xscreensaver.passwd.thermometer.background:  #2E2E2E
-<<<<<<< HEAD
-xscreensaver.passwd.thermometer.width:       8 
-=======
 xscreensaver.passwd.thermometer.width:       8
->>>>>>> cd370c7683f7addfe51162417d8b84c8db03a2d1
 
 URxvt*transparent: false
 URxvt*saveLines: 12000
@@ -38,6 +34,9 @@ URxvt.cursorBlink: True
 URxvt*scrollBar: false
 URxvt*foreground: #DCCBBB
 URxvt*background: #252627
+URxvt*internalBorder: 4
+URxvt*externalBorder: 0
+
 
 URxvt.perl-ext-common: ...,clipboard
 URxvt.keysym.C-c:   perl:clipboard:copy
