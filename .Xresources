@@ -26,7 +26,8 @@ xscreensaver.passwd.thermometer.foreground:  #101010
 xscreensaver.passwd.thermometer.background:  #2E2E2E
 xscreensaver.passwd.thermometer.width:       8
 
-URxvt*transparent: false
+URxvt*transparent: True
+URxvt*shading: 10
 URxvt*saveLines: 12000
 URxvt*font: xft:Terminus:pixelsize=9
 URxvt*font: xft:Terminus:pixelsize=9
@@ -34,6 +35,9 @@ URxvt.cursorBlink: True
 URxvt*scrollBar: false
 URxvt*foreground: #DCCBBB
 URxvt*background: #252627
+URxvt*internalBorder: 4
+URxvt*externalBorder: 0
+
 
 URxvt.perl-ext-common: ...,clipboard
 URxvt.keysym.C-c:   perl:clipboard:copy
@@ -43,8 +47,8 @@ URxvt.clipboard.copycmd:  xsel -ib
 URxvt.clipboard.pastecmd: xsel -ob
 
 ! vosh scheme
-*background: #252627
-*foreground: #DCCBBB
+*background: #DCCBBB
+*foreground: #252627
 ! Black (not tango) + DarkGrey
 *color0:  #000000
 *color8:  #555753
