@@ -57,23 +57,23 @@ URxvt.matcher.button:   1
 *color0:  #000000
 *color8:  #555753
 ! DarkRed + Red
-*color1:  #c64552
-*color9:  #f17060
+*color1:  #c63b49
+*color9:  #fe6a75
 ! DarkGreen + Green
-*color2:  #8eae71
-*color10: #b9f469
+*color2:  #80ae57
+*color10: #b8dd83
 ! DarkYellow + Yellow
-*color3: #de9e4e
-*color11: #ffa75d
+*color3: #de9233
+*color11: #ffe895
 ! DarkBlue + Blue
 *color4:  #479ebb
-*color12: #71dede
+*color12: #7fcde7
 ! DarkMangenta + Mangenta
-*color5:  #7E62B3
-*color13: #a488d9
+*color5:  #75314b
+*color13: #ad6077
 !DarkCyan + Cyan (both not tango)
-*color6:  #618485
-*color14: #7eb2b2
+*color6:  #468385
+*color14: #7eb2b1
 ! LightGrey + White
 *color7:  #C5C5C5
 *color15: #CFCFCF
