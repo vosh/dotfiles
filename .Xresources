@@ -26,17 +26,18 @@ xscreensaver.passwd.thermometer.foreground:  #101010
 xscreensaver.passwd.thermometer.background:  #2E2E2E
 xscreensaver.passwd.thermometer.width:       8
 
-URxvt*transparent: True
-URxvt*shading: 10
+URxvt*transparent: false
+URxvt*shading: 20
 URxvt*saveLines: 12000
-URxvt*font: xft:Terminus:pixelsize=9
-URxvt*font: xft:Terminus:pixelsize=9
+URxvt*font: xft:terminus:pixelsize=9
+URxvt*font: xft:terminus:pixelsize=9
 URxvt.cursorBlink: True
 URxvt*scrollBar: false
 URxvt*foreground: #DCCBBB
 URxvt*background: #252627
 URxvt*internalBorder: 4
 URxvt*externalBorder: 0
+URxvt*geometry: 90x19
 
 
 URxvt.perl-ext-common: ...,clipboard
@@ -45,10 +46,13 @@ URxvt.keysym.C-v:   perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.clipboard.copycmd:  xsel -ib
 URxvt.clipboard.pastecmd: xsel -ob
+URxvt.perl-ext-common:  default,matcher
+URxvt.url-launcher:      /usr/bin/firefox
+URxvt.matcher.button:   1
 
 ! vosh scheme
-*background: #DCCBBB
-*foreground: #252627
+*background: #252627
+*foreground: #DCCBBB
 ! Black (not tango) + DarkGrey
 *color0:  #000000
 *color8:  #555753
@@ -56,17 +60,17 @@ URxvt.clipboard.pastecmd: xsel -ob
 *color1:  #c64552
 *color9:  #f17060
 ! DarkGreen + Green
-*color2:  #8ec553
+*color2:  #8eae71
 *color10: #b9f469
 ! DarkYellow + Yellow
-*color3:  #de9e4e
-*color11: #f7b056
+*color3: #de9e4e
+*color11: #ffa75d
 ! DarkBlue + Blue
 *color4:  #479ebb
 *color12: #71dede
 ! DarkMangenta + Mangenta
-*color5:  #75314b
-*color13: #d66590
+*color5:  #7E62B3
+*color13: #a488d9
 !DarkCyan + Cyan (both not tango)
 *color6:  #618485
 *color14: #7eb2b2
