@@ -4,7 +4,7 @@
 #
 # Executed by startx (run your window manager from here)
 
-DEFAULT_SESSION='exec spectrwm'
+DEFAULT_SESSION='exec openbox-session'
 
 case $1 in
 	openbox-session)
