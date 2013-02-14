@@ -47,7 +47,7 @@ URxvt*visualBell:         true
 URxvt*urgentOnBell:       true
 !URxvt*inheritPixmap:     true
 !URxvt*tintColor:         #000000
-!URxvt*shading:           88
+#!URxvt*shading:           88
 
 URxvt*transparent: false
 URxvt*shading: 20
