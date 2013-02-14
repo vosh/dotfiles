@@ -1,15 +1,25 @@
-# the following variable defines the session which is started if the user
-# doesn't explicitely select a session
-DEFAULT_SESSION=openbox
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+
+DEFAULT_SESSION='exec spectrwm'
 
 case $1 in
-xfce4)
-	exec startxfce4
+	openbox-session)
+	eval $DEFAULT_SESSION
 	;;
-dwm)
-	exec dwm
+	spectrwm)
+	nitrogen --restore &
+	xrdb ~/.Xresources
+	mpd &
+	thunar --daemon &
+	wmname spectrwm &
+	~/.dropbox-dist/dropboxd &
+	mpdscribble
+	exec spectrwm
 	;;
-*)
-	exec $DEFAULT_SESSION
-	;;
+	*)
+	eval $DEFAULT_SESSION
 esac
