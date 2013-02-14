@@ -11,13 +11,13 @@ case $1 in
 	eval $DEFAULT_SESSION
 	;;
 	spectrwm)
-	nitrogen --restore &
-	xrdb ~/.Xresources
+	feh --bg-scale /home/vosh/images/wallpaper/deer.jpeg &
+	xrdb ~/.Xresources &
 	mpd &
 	thunar --daemon &
-	wmname spectrwm &
 	~/.dropbox-dist/dropboxd &
-	mpdscribble
+	mpdscribble &
+	wmname spectrwm &
 	exec spectrwm
 	;;
 	*)
