@@ -6,7 +6,7 @@
 out_to_x no
 background no
 out_to_console yes
-update_interval 1.0
+update_interval 0.5
 total_run_times 0
 use_spacer none
 TEXT
