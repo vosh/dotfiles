@@ -20,7 +20,11 @@ compinit
 
 #PS1=$'┌─[\e[0;33m\%n\e[0m@\e[0;34m\%m\e[0m]─[\e[2;37m\%T\e[0m]\n└─┤'
 
-RPROMPT='%*' # prompt for right side of screen
-PROMPT="%F{blue}%n %f%F{white}~ %f%F{blue}»%f%F{White}» "
+#PROMPT='%B%F{red}[%B%F{white}%~%B%F{red}]%B%F{white}%B%F{cyan}-%B%F{yellow}> %f'
+
+#RPROMPT='%*' # prompt for right side of screen
+#PROMPT="%F{blue}%n %f%F{white}~ %f%F{blue}»%f%F{White}» "
 #PROMPT="%F{blue}┌┤%f%F{cyan}%F{cyan}%n%f@%M%f%F{blue}├─┤%f%F{white}%*%f%F{blue}│
 #%F{blue}└──╼%f "
+
+PROMPT='%F{cyan}[%F{red}%~%F{cyan}]%F{blue}───%f '
