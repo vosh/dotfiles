@@ -4,4 +4,4 @@ update_interval 1.0
 total_run_times 0
 use_spacer none
 TEXT
-  ^i(/usr/share/icons/stlarch_icons/cpu1.xbm) ${cpu cpu0}.00%   ^i(/usr/share/icons/stlarch_icons/mem1.xbm) ${memperc}.00%   ^i(/usr/share/icons/stlarch_icons/file1.xbm) ${fs_used_perc /}.00%   ^i(/usr/share/icons/stlarch_icons/temp1.xbm) ${hwmon temp 1}°C   ^i(/usr/share/icons/stlarch_icons/upleft1.xbm) ${upspeedf wlan0}kb/s ^i(/usr/share/icons/stlarch_icons/downright1.xbm) ${downspeedf wlan0}kb/s   ^i(/usr/share/icons/stlarch_icons/vol1.xbm) ${texeci 1 ~/.conky/mixer.sh}%   ${if_mpd_playing}^i(/usr/share/icons/stlarch_icons/note1.xbm) ${mpd_artist} - ${mpd_title}${endif} 
+^i(/usr/share/icons/stlarch_icons/mail2.xbm) ${color #CCCC99}${texeci 300 python ~/.gmail.py}   ^i(/usr/share/icons/stlarch_icons/temp1.xbm) ${hwmon temp 1}°C   ^i(/usr/share/icons/stlarch_icons/vol1.xbm) ${texeci 1 ~/.conky/mixer.sh}%   ^i(/usr/share/icons/stlarch_icons/clock2.xbm) ${time %d.%m.%Y  %a %k:%M}   
