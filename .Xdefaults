@@ -26,29 +26,53 @@ xscreensaver.passwd.thermometer.foreground:  #101010
 xscreensaver.passwd.thermometer.background:  #2E2E2E
 xscreensaver.passwd.thermometer.width:       8
 
-URxvt*transparent: True
+URxvt*title:              urxvt
+URxvt*termName:           rxvt-256color
+URxvt.background:   	  #252627
+URxvt.foreground:  		  #CCCCCC
+URxvt*secondaryscroll:    true
+URxvt*matcher.button:     1
+URxvt*cursorBlink:        true
+!URxvt*cursorUnderline:    true
+URxvt*highlightColor:     #666666
+URxvt*highlightTextColor: #CCCCCC
+URxvt*cursorColor:        #9999CC
+URxvt*pointerColor:       #99CCFF
+URxvt*pointerColor2:      #000000
+URxvt*colorBD:            #CCCCCC
+URxvt*colorUL:            #FFCC99
+URxvt*underlineColor:     #6666CC
+URxvt*mapAlert:           true
+URxvt*visualBell:         true
+URxvt*urgentOnBell:       true
+!URxvt*inheritPixmap:     true
+!URxvt*tintColor:         #000000
+!URxvt*shading:           88
+
+URxvt*transparent: false
 URxvt*shading: 20
 URxvt*saveLines: 12000
-URxvt*font: xft:Terminus:pixelsize=9
-URxvt*font: xft:Terminus:pixelsize=9
+URxvt*font: xft:terminus:pixelsize=9
+URxvt*boldfont: xft:terminus:pixelsize=9
 URxvt.cursorBlink: True
 URxvt*scrollBar: false
-URxvt*foreground: #DCCBBB
-URxvt*background: #252627
 URxvt*internalBorder: 4
 URxvt*externalBorder: 0
+URxvt*geometry: 90x21
 
-
-URxvt.perl-ext-common: ...,clipboard
-URxvt.keysym.C-c:   perl:clipboard:copy
-URxvt.keysym.C-v:   perl:clipboard:paste
+URxvt.perl-lib: /usr/lib/urxvt/perl
+URxvt.perl-ext-common: default,matcher,clipboard,selection-autotransform
+URxvt.keysym.M-c:   perl:clipboard:copy
+URxvt.keysym.M-v:   perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.clipboard.copycmd:  xsel -ib
 URxvt.clipboard.pastecmd: xsel -ob
+URxvt.url-launcher:      /usr/bin/firefox
+URxvt.matcher.button:   1
 
 ! vosh scheme
-*background: #DCCBBB
-*foreground: #252627
+*background: #252627
+*foreground: #DCCBBB
 ! Black (not tango) + DarkGrey
 *color0:  #000000
 *color8:  #555753
