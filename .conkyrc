@@ -4,4 +4,4 @@ update_interval 1.0
 total_run_times 0
 use_spacer none
 TEXT
-^i(/usr/share/icons/stlarch_icons/mail2.xbm) ${color #CCCC99}${texeci 300 python ~/.gmail.py}   ^i(/usr/share/icons/stlarch_icons/temp1.xbm) ${hwmon temp 1}°C   ^i(/usr/share/icons/stlarch_icons/vol1.xbm) ${texeci 1 ~/.conky/mixer.sh}%   ^i(/usr/share/icons/stlarch_icons/clock2.xbm) ${time %d.%m.%Y  %a %k:%M}   
+   ${time %d.%m.%Y  %a %k:%M}   mail: ${execi 300 ~/.gmail.py}   temp: ${hwmon temp 1}°C   vol: ${execi 1 ~/.mixer.sh}   ${if_mpd_playing}mpd: $mpd_artist - ${mpd_title}$endif
