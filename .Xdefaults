@@ -75,8 +75,8 @@ URxvt.matcher.button:   1
 *background: #252627
 *foreground: #DCCBBB
 ! Black (not tango) + DarkGrey
-*color0: #000000
-*color8: #555753
+*color0: #3F3B40
+*color8: #6B676B
 ! DarkRed + Red
 *color1: #c64552
 *color9: #f17060
