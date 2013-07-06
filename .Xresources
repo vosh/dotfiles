@@ -28,71 +28,73 @@ xscreensaver.passwd.thermometer.width:       8
 
 URxvt*title:              urxvt
 URxvt*termName:           rxvt-256color
-URxvt.background: 		  #252627
-URxvt.foreground:  		  #dcccbb
+!URxvt.background:       #e5e5f7
+!URxvt.foreground:  		  #252627
 URxvt*secondaryscroll:    true
 URxvt*matcher.button:     1
 URxvt*cursorBlink:        true
-URxvt*cursorUnderline:    true
-URxvt*highlightColor:     #666666
-URxvt*highlightTextColor: #FFFFFF
-URxvt*cursorColor:        #999999
-URxvt*pointerColor:       #99CCFF
-URxvt*pointerColor2:      #000000
-URxvt*colorBD:            #FFFFFF
-URxvt*colorUL:            #FFCC99
-URxvt*underlineColor:     #6666CC
+!URxvt*cursorUnderline:    true
+!URxvt*highlightColor:     #666666
+!URxvt*highlightTextColor: #CCCCCC
+URxvt*cursorColor:        #9999CC
+!URxvt*pointerColor:       #99CCFF
+!URxvt*pointerColor2:      #000000
+!URxvt*colorBD:            #CCCCCC
+!URxvt*colorUL:            #FFCC99
+!URxvt*underlineColor:     #6666CC
 URxvt*mapAlert:           true
 URxvt*visualBell:         true
 URxvt*urgentOnBell:       true
 !URxvt*inheritPixmap:     true
 !URxvt*tintColor:         #000000
-#!URxvt*shading:           88
+!URxvt*shading:           88
 
 URxvt*transparent: false
-URxvt*shading: 20
+URxvt*shading: 100
 URxvt*saveLines: 12000
 URxvt*font: xft:terminus:pixelsize=9
 URxvt*boldfont: xft:terminus:pixelsize=9
 URxvt.cursorBlink: True
 URxvt*scrollBar: false
-URxvt*foreground: #DCCBBB
-URxvt*background: #252627
 URxvt*internalBorder: 4
 URxvt*externalBorder: 0
-URxvt*geometry: 90x21
+URxvt*geometry: 83x20
 
 URxvt.perl-lib: /usr/lib/urxvt/perl
-URxvt.perl-ext-common: default,matcher,clipboard,selection-autotransform
-URxvt.keysym.M-c:   perl:clipboard:copy
-URxvt.keysym.M-v:   perl:clipboard:paste
+URxvt.perl-ext-common: default,matcher,clipboard,selection-autotransform, keyboard-select
+URxvt.perl-ext-common: default,matcher,clipboard
+URxvt.keysym.C-c: perl:clipboard:copy
+URxvt.keysym.Cv: perl:clipboard:paste
 URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
 URxvt.clipboard.copycmd:  xsel -ib
 URxvt.clipboard.pastecmd: xsel -ob
 URxvt.url-launcher:      /usr/bin/firefox
 URxvt.matcher.button:   1
 
-!BLACK
-URxvt*color0:               #666666
-URxvt*color8:               #999999
-!RED
-URxvt*color1:               #CC9999
-URxvt*color9:               #FFCCCC
-!GREEN
-URxvt*color2:               #99CC99
-URxvt*color10:              #CCFFCC
-!YELLOW
-URxvt*color3:               #CCCC99
-URxvt*color11:              #FFFFCC
-!BLUE
-URxvt*color4:               #9999CC
-URxvt*color12:              #CCCCFF
-!MAGENTA
-URxvt*color5:               #CC99CC
-URxvt*color13:              #FFCCFF
-!CYAN
-URxvt*color6:               #468385
-URxvt*color14:              #7eb2b1
-!WHITE
-URxvt*color7:               #CCCCCC
-URxvt*color15:              #FFFFFF
+! condensed
+*background: #ededf7
+*foreground: #252627
+! black
+*color0: #666666
+*color8: #666666
+! red
+*color1: #59918a
+*color9: #6ea39d
+! green
+*color2: #c284a5
+*color10:#e8a3c5
+! yellow
+*color3: #8a8cab
+*color11:#acadcf
+! blue
+*color4: #616278
+*color12:#81829b
+! magenta
+*color5: #8e6179
+*color13:#b57f9a
+! cyan
+*color6: #3a5f5a
+*color14:#4c716d 
+! white
+*color7: #707880
+*color15: #C5C8C6
