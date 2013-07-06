@@ -2,6 +2,7 @@ out_to_x no
 out_to_console yes
 update_interval 1.0
 total_run_times 0
-use_spacer none
+use_spacer right
+#  ${if_mpd_playing}   mpd: $mpd_artist - ${mpd_title} $endif   
 TEXT
-   ${time %d.%m.%Y  %a %k:%M}   mail: ${execi 300 ~/.gmail.py}   temp: ${hwmon temp 1}°C   vol: ${execi 1 ~/.mixer.sh}   ${if_mpd_playing}mpd: $mpd_artist - ${mpd_title}$endif
+ CPU: ${cpu cpu0}%, ${hwmon temp 1}°C   RAM: ${mem}                                                                                                                                                          mail: ${execi 300 ~/.gmail.py}   vol: ${execi 1 ~/.mixer.sh}   ${time %d.%m.%Y %a %k:%M}  
