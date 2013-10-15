@@ -26,9 +26,11 @@ xscreensaver.passwd.thermometer.foreground:  #101010
 xscreensaver.passwd.thermometer.background:  #2E2E2E
 xscreensaver.passwd.thermometer.width:       8
 
+Xcursor.theme: Black-DMZ
+
 URxvt*title:              urxvt
 URxvt*termName:           rxvt-256color
-!URxvt.background:       #e5e5f7
+!URxvt.background:   	  #e5e5f7
 !URxvt.foreground:  		  #252627
 URxvt*secondaryscroll:    true
 URxvt*matcher.button:     1
@@ -36,7 +38,7 @@ URxvt*cursorBlink:        true
 !URxvt*cursorUnderline:    true
 !URxvt*highlightColor:     #666666
 !URxvt*highlightTextColor: #CCCCCC
-URxvt*cursorColor:        #9999CC
+URxvt*cursorColor:        #747474
 !URxvt*pointerColor:       #99CCFF
 !URxvt*pointerColor2:      #000000
 !URxvt*colorBD:            #CCCCCC
@@ -58,7 +60,7 @@ URxvt.cursorBlink: True
 URxvt*scrollBar: false
 URxvt*internalBorder: 4
 URxvt*externalBorder: 0
-URxvt*geometry: 83x20
+URxvt*geometry: 95x21
 
 URxvt.perl-lib: /usr/lib/urxvt/perl
 URxvt.perl-ext-common: default,matcher,clipboard,selection-autotransform, keyboard-select
@@ -71,30 +73,30 @@ URxvt.clipboard.pastecmd: xsel -ob
 URxvt.url-launcher:      /usr/bin/firefox
 URxvt.matcher.button:   1
 
-! condensed
-*background: #ededf7
-*foreground: #252627
-! black
-*color0: #666666
-*color8: #666666
-! red
-*color1: #59918a
-*color9: #6ea39d
-! green
-*color2: #c284a5
-*color10:#e8a3c5
-! yellow
-*color3: #8a8cab
-*color11:#acadcf
-! blue
-*color4: #616278
-*color12:#81829b
-! magenta
-*color5: #8e6179
-*color13:#b57f9a
-! cyan
-*color6: #3a5f5a
-*color14:#4c716d 
-! white
-*color7: #707880
-*color15: #C5C8C6
+! vosh scheme
+*background: #252627
+*foreground: #ededf7
+! Black (not tango) + DarkGrey
+*color0: #3F3B40
+*color8: #6B676B
+! DarkRed + Red
+*color1: #c64552
+*color9: #f17060
+! DarkGreen + Green
+*color2:     #2E8B57
+*color10:    #8ec553
+! DarkYellow + Yellow
+*color3: #de9e4e
+*color11: #f7b056
+! DarkBlue + Blue
+*color4: #479ebb
+*color12: #71dede
+! DarkMangenta + Mangenta
+*color5: #75314b
+*color13: #d66590
+!DarkCyan + Cyan (both not tango)
+*color6: #618485
+*color14: #7eb2b2
+! LightGrey + White
+*color7: #C3C3C3
+*color15: #C4C4C4
