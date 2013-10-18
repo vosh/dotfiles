@@ -5,4 +5,10 @@ total_run_times 0
 use_spacer left
 #  vol: ${execi 2 ~/.mixer.sh}
 TEXT
-${if_mpd_playing} ^ca(1, /home/vosh/.wm_scripts/nowplaying)^fg(\#618485)^i(/home/vosh/.icons/stlarch/note1.xbm)^fg(\#ededf7) $mpd_artist - ${mpd_title}   ^ca()$endif ^ca(1, urxvt -e htop)^fg(\#618485)^i(/home/vosh/.icons/stlarch/cpu13.xbm) ^fg(\#ededf7)${cpu cpu0}%   ^fg(\#618485)^i(/home/vosh/.icons/stlarch/temp1.xbm)^fg(\#ededf7)${hwmon temp 1}°C   ^fg(\#618485)^i(/home/vosh/.icons/stlarch/mem1.xbm)^fg(\#ededf7) ${mem}^ca()   ^fg(\#618485)^ca(1, firefox http://www.gmail.com)^i(/home/vosh/.icons/stlarch/mail1.xbm)^fg(\#ededf7) ${execpi 300 python ~/.wm_scripts/gmail.py}^ca()   ^ca(1, /home/vosh/.wm_scripts/battery)^fg(\#618485)^i(/home/vosh/.icons/stlarch/batt4full.xbm)^fg(\#ededf7) ${execi 60 acpi -b | awk '{print $4}' | cut -b -3} ^ca()  ^ca(1, gsimplecal)^fg(\#618485)^i(/home/vosh/.icons/stlarch/clock2.xbm)^ca() ^fg(\#ededf7)${time %d.%m.%Y %a %k:%M}  
+${if_mpd_playing} ^ca(1, /home/vosh/.wm_scripts/nowplaying)^fg(\#618485)^i(/home/vosh/.icons/stlarch/note1.xbm)^fg(\#ededf7) $mpd_artist - ${mpd_title}   \
+^ca()$endif ^ca(1, urxvt -e htop)^fg(\#618485)^i(/home/vosh/.icons/stlarch/cpu13.xbm) ^fg(\#ededf7)${cpu cpu0}%   \
+^fg(\#618485)^i(/home/vosh/.icons/stlarch/temp1.xbm)^fg(\#ededf7)${hwmon temp 1}°C   \
+^fg(\#618485)^i(/home/vosh/.icons/stlarch/mem1.xbm)^fg(\#ededf7) ${mem}^ca()   \
+^fg(\#618485)^ca(1, firefox http://www.gmail.com)^i(/home/vosh/.icons/stlarch/mail1.xbm)^fg(\#ededf7) ${execpi 300 python ~/.wm_scripts/gmail.py}^ca()   \
+^ca(1, /home/vosh/.wm_scripts/battery)^fg(\#618485)^i(/home/vosh/.icons/stlarch/batt4full.xbm)^fg(\#ededf7) ${execi 60 acpi -b | awk '{print $4}' | cut -b -3} ^ca()  \
+^ca(1, gsimplecal)^fg(\#618485)^i(/home/vosh/.icons/stlarch/clock2.xbm)^ca() ^fg(\#ededf7)${time %d.%m.%Y %a %k:%M}  
