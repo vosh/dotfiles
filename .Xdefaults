@@ -1,0 +1,111 @@
+! xscreensaver ---------------------------------------------------------------
+
+!font settings
+xscreensaver.Dialog.headingFont:        -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-fixed-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-fixed-medium-r-*-*-14-*-*-*-*-*-*-*
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #101010
+xscreensaver.Dialog.background:         #D8D8D8
+xscreensaver.Dialog.topShadowColor:     #D8D8D8
+xscreensaver.Dialog.bottomShadowColor:  #D8D8D8
+xscreensaver.Dialog.Button.foreground:  #101010
+xscreensaver.Dialog.Button.background:  #E5E5E5
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #101010
+xscreensaver.Dialog.text.background:    #E5E5E5
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        20
+xscreensaver.Dialog.shadowThickness:    2
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #101010
+xscreensaver.passwd.thermometer.background:  #2E2E2E
+xscreensaver.passwd.thermometer.width:       8
+
+Xcursor.theme: Black-DMZ
+Xcursor.size:  16
+
+URxvt*title:              urxvt
+URxvt*termName:           rxvt-256color
+!URxvt.background:   	  #e5e5f7
+!URxvt.foreground:  		  #252627
+URxvt*secondaryscroll:    true
+URxvt*matcher.button:     1
+URxvt*cursorBlink:        true
+!URxvt*cursorUnderline:    true
+!URxvt*highlightColor:     #666666
+!URxvt*highlightTextColor: #CCCCCC
+URxvt*cursorColor:        #747474
+!URxvt*pointerColor:       #99CCFF
+!URxvt*pointerColor2:      #000000
+!URxvt*colorBD:            #CCCCCC
+!URxvt*colorUL:            #FFCC99
+!URxvt*underlineColor:     #6666CC
+URxvt*mapAlert:           true
+URxvt*visualBell:         true
+URxvt*urgentOnBell:       true
+!URxvt*inheritPixmap:     true
+!URxvt*tintColor:         #000000
+!URxvt*shading:           88
+
+URxvt*transparent: false
+URxvt*shading: 100
+URxvt*saveLines: 12000
+URxvt*font: xft:terminus:pixelsize=9
+URxvt*boldfont: xft:terminus:pixelsize=9
+URxvt.cursorBlink: True
+URxvt*scrollBar: false
+URxvt*internalBorder: 4
+URxvt*externalBorder: 0
+URxvt*geometry: 85x21
+
+URxvt.perl-lib: /usr/lib/urxvt/perl
+URxvt.perl-ext-common: default,matcher,clipboard,selection-autotransform, keyboard-select
+URxvt.perl-ext-common: default,matcher,clipboard
+URxvt.keysym.C-c: perl:clipboard:copy
+URxvt.keysym.Cv: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+URxvt.url-launcher:      /usr/bin/firefox
+URxvt.matcher.button:   1
+
+*foreground:                          #ededf7
+*background:                          #252627
+
+!! black dark/light
+*color0: #332d29
+*color8: #817267
+
+!! red dark/light
+*color1: #9a7474
+*color9: #ea8484
+! *color9: #907f71
+
+!! green dark/light
+*color2: #afbf83
+*color10: #b8c596
+
+!! yellow dark/light
+*color3: #efaf63
+*color11: #e0b37d
+
+!! blue dark/light
+*color4: #64657b
+*color12: #74758d
+
+!! magenta dark/light
+*color5: #7d6b5d
+*color13: #c5b3a6
+
+!! cyan dark/light
+*color6: #75715e
+*color14: #82827d
+
+!! white dark/light
+*color7: #f9cda2
+*color15: #fff0d9
